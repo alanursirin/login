@@ -1,0 +1,125 @@
+
+body{
+    --color-primary: rgba(18, 218, 93, 0.7);
+    --color-primary-dark: #daf8e9;
+    --color-secondary: rgba(180, 30, 173, 0.5);
+    --color-error: rgb(203, 41, 41);
+    --color-success: rgb(18, 96, 18);
+    --border-radius: 10px;
+    --color-main: rgb(236, 149, 34);
+    --color-component: #288D5F;
+    --color-component-hover: #288D5F;
+
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary)), url(bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+
+.container{
+    width: 400px;
+    max-height: 600px;     
+}
+
+
+img{
+    width: 400px;
+    border-radius: var(--border-radius);
+}
+
+
+/* Form */
+.form{
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background-color: rgba(65, 4, 145, 0.8);
+}
+
+
+.form__message{
+    color: var(--color-error);
+}
+
+.form__input-error-message{
+    color: var(--color-error);
+    font-size: 1.15rem;
+    text-align: left;
+    margin-top: 0.5rem;
+}
+
+.form__input--group{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.form__input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.7rem;
+    border-radius: var(--border-radius);
+    outline: none;
+    border: 2px solid rgba(25, 24, 26, 0.8);
+    background-color: #e07bb6;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.form__input:focus{
+    border-color: var(--color-main);
+    background-color: white;
+}
+
+.form__button{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    background-color: var(--color-component);
+    border-radius: var(--border-radius);
+}
+
+.form__button:hover{
+    background-color: var(--color-main);
+}
+
+.form__button:active{
+    transform: scale(0.98);
+}
+
+.form__link{
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: -10px;
+
+}
+
+.form__link:hover{
+    color: var(--color-component-hover);
+}
+
+.form__text{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+
+.form__text_register{
+    margin: 15px;
+}
