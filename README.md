@@ -1,4 +1,4 @@
-<h1>lOGIN PAGE</h1>
+<h1>LOGIN PAGE</h1>
 
 <h2>Used Technologies</h2>
 
